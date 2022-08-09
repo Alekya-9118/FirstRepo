@@ -1,0 +1,11 @@
+table,th,td{
+    border:1px solid black;
+    border-color: rgb(18, 122, 18);
+}
+tr{
+    background-color: rgb(158, 240, 158);
+}
+td{
+    text-align:center;
+    
+}

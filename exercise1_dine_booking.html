@@ -1,0 +1,86 @@
+<html>
+    <head><title>Dine Booking
+    </title>
+    <link rel="stylesheet" href="practice1.css">
+    <script>
+    function validate(){
+        var vn=document.getElementById('visitor name').value;
+        var nom=document.getElementById('Number of members').value;
+        var cn=document.getElementById('contact No').value;
+        var e=document.getElementById('Email').value;
+        var tof=document.getElementById('Type of Food').value;
+        if(length(vn)>20){
+            window.alert("visitor name must be less than or equal to 20");
+            return false;
+        }
+        else{
+            window.alert("once check visitor name");
+        } 
+        if(length(nom)>=100){
+            window.alert("accept maximum of two digit number");
+            return false;
+        }
+        else{
+            window.alert("once check number of members")
+        }
+        window.alert("registered successfully");
+    }
+    </script> 
+    </head>
+    <body>
+        <center>
+        <form action="validate()">
+            <table align="center"  cellspacing="0">
+<caption align="center">Dine Booking</caption><br>
+<tr>
+    <td>Visitor name:</td>
+    <td><input type='text' id='vn'></td><br>
+</tr>
+<tr>
+    <td>Number of members:</td>
+    <td><input type='text' id='nom'></td><br>
+</tr>
+<tr>
+   <td>Contact No:</td>
+   <td><input type='text'{0-9} maximum length="10" id='cn'></td>
+</tr>
+<tr>
+    <td>Email:</td>
+    <td><input type="email" id="Email"></td>
+</tr>
+<tr>
+    <td>Type of Food:</td>
+    <td><input type="checkbox" id="Type of Food">South Indian
+        <input type="checkbox" id="Type of Food">North Indian
+        <input type="checkbox" id="Type of Food">Chinese 
+        <input type="checkbox" id="Type of Food">Western
+    </td>
+
+</tr>
+<tr><td>Room Status:</td>
+    <td><input type="radio" id="Status">AC
+    <input type="radio" id="Status" checked>Non-AC</td>
+</tr>
+<tr>
+    <td>Venue Preference:</td>
+    <td><input list="browsers" name="browsers" placeholder="SELECT">
+    <datalist id="browsers">
+        <option value="Arena" name="browsers">
+        <option value="Fiesta" name="browsers">
+        <option value="Vista" name="browsers">
+        <option value="Mythri" name="browsers">
+        <option value="Magna" name="browsers">
+        <option value="Oasis" name="browsers">
+        <option value="Amoeba" name="browsers"></option>
+    </datalist></td>
+</tr>
+<tr>
+    <td><input type="button" name="Book" value="Book"></td>
+    <td><input type="button" name="Reset" value="Reset"></td>
+</tr>
+
+
+            </table>
+        </form>
+        </center>
+    </body>
